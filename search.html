@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="icon"
+    href="pokeball.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css"> 
+  </head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Pokedex</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="circle-container">
+          <div class="outer-circle">
+            <div class="inner-circle"></div>
+          </div>
+        </div>
+      
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home
+         <span class="sr-only"></span></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="search.html">Search</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="types.html">Types</a>
+        
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="abilities.html">Abilities</a>
+              </li>
+              <li class="nav-item"> 
+        
+                <a class="nav-link" href="moves.html">Moves</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="generations.html">Generations</a> 
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="team-builder.html">Team Builder</a> 
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="battle.html">Battle Simulator</a> 
+              </li>              
+            </ul>
+          </div>
+        </nav>
+
+    <div class="container mt-5">
+        <h1>Search for a Pokémon</h1>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" id="search-input" placeholder="Enter Pokémon name or ID" aria-label="Pokémon name or ID" aria-describedby="button-addon2">
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button" id="search-button">Search</button>
+            </div>
+        </div>
+
+        <div id="search-results">
+            </div>
+    </div>
+
+    <script src="script.js"></script> </body>
+</html>
